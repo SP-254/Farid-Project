@@ -1,7 +1,7 @@
-var name = "Simon"
-let gender = "Male"
-const programmer = true
-const age = 30
+//var name = "Simon"
+//let gender = "Male"
+//const programmer = true
+//const age = 12
 
 //console.log("My name is,", name)
 
@@ -17,7 +17,7 @@ function showSlides() {
     slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
+  if (slideIndex > slides.length) { slideIndex = 1 }
+  slides[slideIndex - 1].style.display = "block";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }

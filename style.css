@@ -12,10 +12,27 @@ html {
 
 }
 
+.psguarantee{
+    max-width: 280px;
+    background-color:#C40000;
+    display: flex;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    position: absolute;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-right: 10px;
+    right: 0;
+
+}
+
+
 .header {
     width: 100%;
-    padding-bottom: 1.5rem;
-    background-color: #C40000;
+    /*padding-bottom: 1.5rem;*/
+    background-color:#C40000;
+    flex-wrap: wrap;
 }
 
 nav {
@@ -25,6 +42,7 @@ nav {
     width: 92%;
     margin: auto;
     padding-top: 10px;
+    flex-wrap: wrap;
 
 }
 
@@ -37,16 +55,17 @@ nav .logo h2 {
     width: 60%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .navlinks>input {
     border: 1px solid white;
     padding: 6px;
-    border-radius: 4px;
+    border-radius: 10px;
     /*height: 2.4rem;*/
     color: white;
     width: 40%;
-    background-color: #C40000;
+    background-color: rgb(222, 222, 222);
 }
 
 .navlinks>input:focus {
@@ -94,6 +113,15 @@ nav .logo h2 {
     margin: 10px;
     background-color: white;
     border-radius: 10px;
+}
+
+.shop-item:hover{
+    background-color:white;
+    color:#C40000;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 1s ease;
+
 }
 
 .shop-item-title {
@@ -267,6 +295,7 @@ form {
     margin-left: 20px;
 }
 
+/* Contact page */
 .split{
     display: flex;
     justify-content: space-between;
@@ -282,42 +311,65 @@ form {
 
 .flex-container{
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    flex-wrap: wrap;
+
 }
 
 .card{
     background-color: orange;
     width: 300px;
-    height: 400px;
-    margin: 30px;
+    margin: 10px;
+    border-radius: 15px;
 }
 
 .card p{
-    padding: 10px;
     text-align: justify;
+    padding: 20px;
 }
 
 .card h1{
-    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    
 }
 
 .card-image{
-    background-color: aqua;
-    height: 200px;
+    height: 250px;
     margin-bottom: 15px;
     background-size: cover;
+    border-radius: 15px 15px 0 0;
+   
 }
 
 .card-1{
-    background-image: url('http://leatherians.com/wp-content/uploads/bfi_thumb/leather-print-technology-3aodz9jljn31a2o9be8q2y.jpg');
+    background-image: url('https://i.pinimg.com/736x/a7/57/8c/a7578c9aa255f763de52cafc86eaedc4.jpg');
 }
 
 .card-2{
-    background-image: url('http://leatherians.com/wp-content/uploads/bfi_thumb/leather-print-technology-3aodz9jljn31a2o9be8q2y.jpg');
+    background-image:  url('D:/Farid Project/shop/executive/gift-set-executive-notebook-diary.jpg');
 }
 
 .card-3{
-    background-image: url('http://leatherians.com/wp-content/uploads/bfi_thumb/leather-print-technology-3aodz9jljn31a2o9be8q2y.jpg');
+    background-image: url('https://s26551.pcdn.co/wp-content/uploads/2021/05/framebridge_clarendon_-310_final_v2-1260x840.jpg');
+}
+
+.card a{
+    background-color:#C40000;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 70px;
+    text-decoration: none;
+}
+
+.card:hover{
+    background-color:rgb(223, 223, 223);
+    color:#C40000;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1s ease;
 }
 
 * {box-sizing:border-box}
@@ -326,7 +378,14 @@ form {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  padding: 10px 0;
+
+}
+
+.slidetop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* Hide the images by default */
@@ -367,7 +426,7 @@ form {
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 50px;
   width: 100%;
   text-align: center;
 }
@@ -376,7 +435,7 @@ form {
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
-  padding: 8px 12px;
+  padding: 15px 12px;
   position: absolute;
   top: 0;
 }
@@ -394,7 +453,7 @@ form {
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color:#C40000;
 }
 
 /* Fading animation */
